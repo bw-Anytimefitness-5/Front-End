@@ -1,10 +1,15 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
-
+import LoginForm from './components/forms/LoginForm'
 function App() {
   return (
+    
     <div className="App">
+      <Router>
+      <Route  exact path="/" component={LoginForm}/>
+    </Router>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
