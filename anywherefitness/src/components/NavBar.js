@@ -6,6 +6,7 @@ const NavBar = () => {
             <nav>
                 <Link to='/'>Sign up</Link>
                 <Link to='/login'>Login</Link>
+                <Link to='/login' onClick={localStorage.removeItem('token')} >Log Out</Link>
             </nav>
         </div>
     )

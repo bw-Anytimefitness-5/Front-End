@@ -2,7 +2,7 @@ import React,{useState} from "react";
 
 import { withFormik, Form, Field } from "formik";
 import * as Yup from "yup";
-// import history from '../history'
+
 import { axiosWithAuth } from "../AxiosWithAuth/axiosWithAuth";
 
 
@@ -39,9 +39,10 @@ const FormikLoginForm = withFormik({
       
       .then(res => {
         
-        localStorage.setItem("token", res.data.payload);
+        localStorage.setItem("token", res.data.token);
         localStorage.setItem('user',JSON.stringify(res.data.user))
         props.history.push("/protected")
+        console.log(localStorage)
         
         
         

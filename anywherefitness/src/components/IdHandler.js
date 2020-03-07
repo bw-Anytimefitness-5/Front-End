@@ -3,7 +3,7 @@ import {axiosWithAuth} from './AxiosWithAuth/axiosWithAuth'
 
 const IdHandler = () =>{
     const [user,setUser]=useState({})
-    const [classes,setClasses]=useState()
+    const [classes,setClasses]=useState([])
    const userText = localStorage.getItem('user');
    const userObject = JSON.parse(userText);
    useEffect(() => {
@@ -12,13 +12,14 @@ const IdHandler = () =>{
         .get("api/classes")
         .then(res=>{
             setClasses(res.data)
-            console.log(res.data)
+            
         })
    }, [])
    
    if (user.roleId == 2){
     return(<div>
         <p>Client</p>
+        
        </div>)
    }else {
     return(<div>
