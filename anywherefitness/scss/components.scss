@@ -1,0 +1,44 @@
+.btn {
+  height: 6rem;
+  width: 100%;
+  font-size: 3rem;
+  border: 1px solid $blue-color1;
+  border-radius: 3rem;
+}
+
+.btn:hover {
+  background-color: $blue-color;
+  cursor: pointer;
+}
+.btn-class {
+  border: 1px solid $blue-color1;
+  border-radius: 2rem;
+  font-size: 2.5rem;
+  display: black;
+  margin: 2rem 30%;
+}
+
+.btn-class:hover {
+  background-color: $blue-color;
+  cursor: pointer;
+}
+
+.btn-link {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  color: $lessRedcolor;
+}
+
+.btn-logout {
+  width: 10rem;
+  height: 4rem;
+  font-size: 2rem;
+  border-radius: 3rem;
+  border: 1px solid blue;
+}
+
+.btn-logout:hover {
+  background-color: $blue-color;
+  cursor: pointer;
+}

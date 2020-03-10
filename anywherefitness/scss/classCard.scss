@@ -1,0 +1,26 @@
+.classCard {
+  background: $color-bg-primary;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.classDetail {
+  background: $color-bg-primary;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cardButtons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-right: 5rem;
+
+  button {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+  }
+}
